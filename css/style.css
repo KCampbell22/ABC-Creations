@@ -111,7 +111,7 @@
     height: 100vh;
 }
 .blue-box{
-    position: absolute;
+    position: relative;
     height: 40px;
     width: 100px;
     background-color: var(--banner-blue);
@@ -181,27 +181,94 @@
         top: 8rem;
         left: 2rem;
         margin: 0 auto;
-        width: 250px;
+        width: 230px;
         z-index: 2;
 
     }
     .hero-img{
-        top: 20.5rem;
-        width: 170px;
-        left: 13rem;
+        top: 19.5rem;
+        width: 140px;
+        left: 12.3rem;
     }
     .blue-banner{
-        width: 23ch;
+        width: 22ch;
         height: 40px;
-        font-size: .8rem;
+        font-size: .7rem;
         position: absolute;
-        top: 22.5rem;
-        left: 2.65rem;
+        top: 21.5rem;
+        left: 3.85rem;
         margin-bottom: 0;    }
        
 
 }
 
+
+/* Video */ 
+
+.blue-box{
+    top: 3rem;
+    position: relative;
+    width: 39ch;
+    height: 65px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    z-index: 2;
+    text-shadow: 1px 1px 1px black;
+
+}
+.video{
+    position: relative;
+    height: 800px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.video-container{
+    position: relative;
+    width: 100vw;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+}
+video{
+    height: 400px;
+    width: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 575.98px){
+    .video-container video{
+        height: 300px;
+    }
+    .video-container{
+        height: 280px;
+    }
+    .video{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .blue-box{
+        width:40ch;
+        top: -1rem;
+        height: 40px;
+        line-height: 20px;
+        font-size: .7rem;
+        position: absolute;
+        margin-bottom: 0;    }
+    }
+
 .open{
     display: flex;
 }
+

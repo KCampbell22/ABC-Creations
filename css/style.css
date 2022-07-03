@@ -168,7 +168,7 @@
     }
     .big-block{
         width: 80%;
-        height: 500px;
+        height: 700px;
         position: relative;
         top: 0;
         left: 0;
@@ -178,16 +178,16 @@
     .logo img{
         height: auto;
         position: absolute;
-        top: 5rem;
+        top: 8rem;
         left: 2rem;
         margin: 0 auto;
-        width: 220px;
+        width: 270px;
         z-index: 2;
 
     }
     .hero-img{
-        top: 15rem;
-        width: 150px;
+        top: 18rem;
+        width: 200px;
         right:-1.5rem;
     }
     .blue-banner{

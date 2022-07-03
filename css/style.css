@@ -181,26 +181,24 @@
         top: 8rem;
         left: 2rem;
         margin: 0 auto;
-        width: 270px;
+        width: 250px;
         z-index: 2;
 
     }
     .hero-img{
-        top: 18rem;
-        width: 200px;
-        right:-1.5rem;
+        top: 20.5rem;
+        width: 170px;
+        left: 13rem;
     }
     .blue-banner{
         width: 23ch;
         height: 40px;
-        font-size: .6rem;
+        font-size: .8rem;
         position: absolute;
-        top: 16.5rem;
-        left: 3.5rem;
+        top: 22.5rem;
+        left: 2.65rem;
         margin-bottom: 0;    }
-        .logo img{
-            width: 200px;
-        }
+       
 
 }
 

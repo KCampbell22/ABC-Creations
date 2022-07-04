@@ -136,6 +136,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
+   
     border-radius: 12px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -215,7 +216,7 @@
     color: white;
     border-radius: 12px;
     z-index: 2;
-    text-shadow: 1px 1px 1px black;
+    font-family: 'Inter';
 
 }
 .video{
@@ -272,3 +273,122 @@ video{
     display: flex;
 }
 
+
+
+.text-shadow{
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.512);
+}
+.section-block{
+    position: absolute;
+    max-width: 1000px;
+}
+/* targets every odd section block */
+.right{
+    right: 0;
+    transform: rotate(180deg);
+
+    
+}
+.left-img{
+    left: 3rem;
+    top: -2rem;
+}
+
+.right-img{
+    right: 6rem;
+    height: 450px;
+    top: -8rem;
+}
+/* main products */
+
+.main-image{
+    position: absolute;
+    max-width: 494px;
+    border-radius: 36px;
+}
+
+.custom-clothes, .custom-shoes, .custom-wall-art {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+}
+.main-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+.custom-clothes img{
+
+}
+
+.product-description{
+    position: absolute;
+    width: auto;
+    top: 7rem;
+    z-index: 3;
+    right: 35rem;
+    color: var(--dark-blue);
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-list li{
+    color: var(--dark-blue);
+    list-style: none;
+
+}
+
+.description-list{
+    margin: 0 auto;
+}
+
+.description-list li::before{
+    content :'-';
+    margin-right: 1rem;
+}
+
+#right-list{
+    right: 36rem
+}
+
+
+.flex-start{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2{
+    text-align: center;
+    width: auto;
+}
+
+#Decor{
+    right: 39rem;
+}
+
+.Products h2{
+    height: 50px;
+    width: 15ch;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color: var(--banner-blue);
+    border-radius: 12px;
+    color: white;
+
+}
+
+.Products{
+    line-height: 50px;
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    font-family: 'Inter';
+}

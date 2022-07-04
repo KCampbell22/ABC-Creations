@@ -392,3 +392,53 @@ h2{
     margin-top: 3rem;
     font-family: 'Inter';
 }
+
+
+@media screen and (max-width: 575.98px){
+    .custom-clothes, .custom-shoes, .custom-wall-art {
+        height: 150px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .section-block{
+       max-width: 250px;
+    }
+    .main-image{
+        max-width: 130px;
+        border-radius: 12px;
+    }
+    .right-img{
+        max-height: 120px;
+        aspect-ratio: 1/ 1;
+        top: -.5rem;
+        right: 1rem;
+    }
+    .left-img{
+        left: 0.5rem;
+    top: 0.5rem;
+    }
+    .product-description{
+        top: 3rem;
+        right: 9rem;
+        font-size: .345rem;
+    }
+    #right-list{
+        right: 9rem;
+        top: 2.5rem;
+    }
+    .flex-start{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .flex-start h2{
+        width: 15ch;
+    }
+    #Decor{
+        right: 9.5rem;
+    }
+}

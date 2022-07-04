@@ -403,7 +403,7 @@ h2{
         justify-content: space-evenly;
     }
     .section-block{
-       max-width: 250px;
+       max-width: 320px;
     }
     .main-image{
         max-width: 130px;
@@ -420,13 +420,14 @@ h2{
     top: 0.5rem;
     }
     .product-description{
-        top: 3rem;
-        right: 9rem;
-        font-size: .345rem;
+        top: 2.2rem;
+        right: 5rem;
+        font-size: .5rem;
     }
     #right-list{
-        right: 9rem;
-        top: 2.5rem;
+        right: 11rem;
+    top: 1rem;
+    padding: 9px;
     }
     .flex-start{
         width: auto;
@@ -439,6 +440,6 @@ h2{
         width: 15ch;
     }
     #Decor{
-        right: 9.5rem;
+        right: 5.5rem;
     }
 }

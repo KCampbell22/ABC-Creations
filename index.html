@@ -41,63 +41,111 @@
         </div>
    
         <div class="video-container">
-            <video controls autoplay muted loop src="/Vids/Untitled ‑ Made with FlexClip (1).mp4">
+            <video controls autoplay loop src="/Vids/Untitled ‑ Made with FlexClip (1).mp4">
                 <source type="video/mp4" src="Vids/Untitled ‑ Made with FlexClip (1).mp4">
                 <p>error loading video</p>
             </video>
         </div>
     
 </section>
-<section class="main-products">
-    <div class="Products" >
-        <h2 class="text-shadow">Services</h2>
-    </div>
-    <div class="custom-clothes">
-        <img  src="/images/section-block.png" class="section-block left" alt="">
-        <img class="main-image left-img" src="/images/denim.jpg" alt="">
-        <div class="flex-start">
-            <div class="product-description">
-                <h2>Custome Clothes</h2>
-                <ul class="description-list">
-                    <li>Jeans</li>
-                    <li>Denim Jacket</li>
-                    <li>Shorts</li>
-                    <li>And more!</li>
-                </ul>
-            </div>
+<div class="products">
+    <section class="main-products">
+        <div class="Products" >
+            <h2 class="text-shadow">Services</h2>
         </div>
-
-    </div>
-    <div class="custom-shoes">
-        <img src="/images/section-block.png" class="section-block right">
-        <img class="main-image right-img" src="/images/Cocomelon.jpg" alt="">
-        <div class="product-description" id="right-list">
+        <div class="custom-clothes">
+            <img  src="/images/section-block.png" class="section-block left" alt="">
+            <img class="main-image left-img" src="/images/denim.jpg" alt="">
             <div class="flex-start">
-                <h2>Custome Shoes & Accessories</h2>
-                <ul class="description-list" >
-                    <li>Sneakers</li>
-                    <li>Backpacks</li>
-                    <li>Hats</li>
-                    <li>Bows</li>
-                </ul>
+                <div class="product-description">
+                    <h2>Custome Clothes</h2>
+                    <ul class="description-list">
+                        <li>Jeans</li>
+                        <li>Denim Jacket</li>
+                        <li>Shorts</li>
+                        <li>And more!</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+        <div class="custom-shoes">
+            <img src="/images/section-block.png" class="section-block right">
+            <img class="main-image right-img" src="/images/Cocomelon.jpg" alt="">
+            <div class="product-description" id="right-list">
+                <div class="flex-start">
+                    <h2>Custome Shoes & Accessories</h2>
+                    <ul class="description-list" >
+                        <li>Sneakers</li>
+                        <li>Backpacks</li>
+                        <li>Hats</li>
+                        <li>Bows</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="custom-wall-art">
-        <img src="/images/section-block.png" class="section-block left">
-        <img class="main-image left-img" src="/images/wall-art-eli.jpg" alt="">
-        <div class="flex-start">
-            <div class="product-description" id="Decor">
-                <h2>Decor</h2>
-                <ul class="description-list">
-                    <li>Wall Decor</li>
-                    <li>Shelf Decor</li>
-                    <li>And more!</li>
-                </ul>
+        <div class="custom-wall-art">
+            <img src="/images/section-block.png" class="section-block left">
+            <img class="main-image left-img" src="/images/wall-art-eli.jpg" alt="">
+            <div class="flex-start">
+                <div class="product-description" id="Decor">
+                    <h2>Decor</h2>
+                    <ul class="description-list">
+                        <li>Wall Decor</li>
+                        <li>Shelf Decor</li>
+                        <li>And more!</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </section>
+    <div id="op-title" style="position: relative;">
+        <h2 class="other-prod-banner text-shadow">Other Products</h2>
     </div>
-</section>
+    <section class="other-products">
+        
+        <div class="dark-blue-box">
+            <!-- banner img or svg-->
+            <img class="other-products-img-left" id="baby-items" src="/images/baby-cloths.jpg" alt="">
+            <h3 class="section-title-left">Baby Items</h3>
+        </div>
+        <div class="dark-blue-box-right">
+            <!-- banner img or svg-->
+            <img class="other-products-img-right" id="backpacks" src="/images/luka.jpg" alt="">
+            <h3 class="section-title-right">Custom Backpacks</h3>
+        </div>
+        <div class="dark-blue-box">
+            <!-- banner img or svg-->
+            <img class="other-products-img-left" id="sm-decor" src="/images/desk-art.jpg" alt="">
+            <h3 class="section-title-left">Small & Medium Decor</h3>
+        </div>
+        <div class="dark-blue-box-right">
+            <!-- banner img or svg-->
+            <img class="other-products-img-right" id="lg-decor" other-products-img src="/images/table-display.jpg" alt="">
+            <h3 class="section-title-right">Large Decor</h3>
+        </div>
+    </section>
+</div>
+<footer>
+    <img src="/images/Rectangle 339.svg" alt="">
+    <form runat="server">
+        <!-- name -->
+        <input type="text" required name="name" placeholder="Name">
+        <!-- email -->
+        <input type="text" required name="email" placeholder="Email">
+        <!-- IMAGES-->
+        <label for="image" data-image-input>
+            <input type="file" name="image" id="file-input"  multiple accept="image/*">
+            <div id="preview"></div>
+        </label>
+        <!-- description-->
+        <textarea required name="description"  cols="30" rows="10" placeholder="Description"></textarea>
+        <!-- submit-->
+        <input type="submit" value="Submit">
+    </form>
+</footer>
     <script src="/index.js"></script>
+    <script src="/imgInput.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>

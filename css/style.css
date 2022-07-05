@@ -6,6 +6,12 @@
 
 }
 
+
+H2, H3, H4, H5, H6, p, a{
+    font-family: 'Inter', sans-serif;
+    display: block;
+    position: relative;
+}
 .site-container{
     display: flex;
     flex-direction: column;
@@ -13,6 +19,8 @@
 
 /* Navbar */
 .nav-bar{
+    font-family: 'Inter', sans-serif;
+    
     width: auto;
     height: 50px;
     position: absolute;
@@ -47,9 +55,13 @@
     letter-spacing: 1px;}
 
 .nav-item a, .nav-item:active a{
-    color: rgb(7, 7, 7);
-    text-decoration: none;
+    color: var(--dark-blue) !important;    text-decoration: none;
     font-weight: bold;
+}
+.nav-item a:hover{
+    text-decoration: underline 3px var(--banner-blue) !important;
+    text-underline-offset: 3px;
+
 }
 
 @media screen and  (max-width: 575.98px){
@@ -79,7 +91,7 @@
 /* Hero */
 .hero-wrap{
     width: 100%;
-    height: 1000px;
+   height: 1000px;
     position: relative;
     top: 0px;
     left: 0;
@@ -156,7 +168,7 @@
 }
 @media (max-width: 575.98px){
     .hero-wrap{
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
 
@@ -169,12 +181,12 @@
     }
     .big-block{
         width: 80%;
-        height: 700px;
+        height: 638px;
         position: relative;
         top: 0;
         left: 0;
         margin-bottom: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-right-radius: 12px;
     }
     .logo img{
         height: auto;
@@ -300,7 +312,10 @@ video{
     top: -8rem;
 }
 /* main products */
-
+.products{
+    display: flex;
+    flex-direction: column;
+}
 .main-image{
     position: absolute;
     max-width: 494px;
@@ -440,6 +455,268 @@ h2{
         width: 15ch;
     }
     #Decor{
-        right: 5.5rem;
+        right: 2rem;
     }
 }
+
+
+/* Other Products */
+
+.other-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.dark-blue-box{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+   
+}
+
+.dark-blue-box, .dark-blue-box-right{
+    position: relative;
+    max-width: 700px;
+    height: 443px;
+    background-color: var(--dark-blue);
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    width: 662px;
+}
+.dark-blue-box-right{
+    align-self: flex-end;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.other-products-img-right, .other-products-img-left{
+    position: absolute;
+    max-height: 460px;
+    min-height: 200px;
+    max-width: 680px;
+    border-radius: 12px;
+}
+
+.other-products-img-left{
+    left: 10rem
+}
+
+.other-products-img-right{
+    right: 10rem;
+}
+
+.section-title-left, .section-title-right{
+    min-width: 22ch;
+    max-width: 24ch;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    color: var(--dark-blue);
+    background-color: var(--sage-green);
+    font-size: 1.5rem;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -3rem;
+   
+}
+
+.section-title-left{
+    left: 10rem;
+}
+
+.section-title-right{
+    right: 10rem;
+}
+
+#baby-items, #backpacks{
+    bottom: 5rem;
+}
+
+
+
+
+.other-prod-banner{
+    position: absolute;
+    width: 17ch;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    background-color: var(--banner-blue);
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 575.98px){
+#op-title{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+    .section-title-left, .section-title-right{
+        width: auto;
+    }
+    .dark-blue-box, .dark-blue-box-right{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .section-title-left{
+        left: 1rem
+    }
+
+    .other-products-img-right, .other-products-img-left{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .other-products-img-right{
+        right: 1rem;
+    }
+
+    .other-products-img-left{
+        left: 1rem;
+    }
+    
+    .section-title-left, .section-title-right{
+        max-width: 15ch;
+        font-size: .8rem;
+    }
+    .section-title-right{
+        right: 1rem;
+    }
+    #sm-decor{
+        left: 1rem;
+        bottom: 2rem;
+    }
+
+    #baby-items, #backpacks{
+        bottom: 2rem;
+    }
+    .product-description {
+        right: 2rem;
+    }
+
+
+}
+
+
+
+footer{
+    min-height: 800px;
+    background-color: var(--dark-blue);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+footer img{
+    width: 80%;
+    position: absolute;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3rem;
+    width: 500px;
+    border-radius: 36px;
+    height: 500px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(92, 91, 91, 0.221);
+    position: absolute;
+    right: 15rem;
+    top: 5rem;
+    
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 30px;
+    border-radius: 12px;
+    border: 1px solid #0A142F;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 12px;
+    border: 1px solid #0A142F;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input[type="file"]{
+    width: 100%;
+    height: 30px;
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#preview{
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+
+}
+
+#preview img{
+    position: relative;
+    width: 80px;
+    height: 100px;
+    border-radius: 9px;
+}
+
+@media screen and (max-width: 575.98px){
+    footer{
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        position: relative;
+        height: auto;
+        width: auto;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        align-items: center;
+    }
+    #preview{
+        height: auto;
+    }
+    footer img{
+    }
+    input[type="text"]{
+        height: 30px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    textarea{
+        height: 100px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #rectangle{
+        display: none;
+    }
+    
+}
+
+   

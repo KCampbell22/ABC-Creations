@@ -24,16 +24,15 @@
         <article class="hero-wrap">
             <article class="dark-blue big-block">
                 <div class="logo">
-                    <img src="/images/logo.png" alt="">
+                    <img src="/images/Pink and Black Pretty Lovely Cosmetics Boutique Logo (3)_prev_ui.png" alt="">
                 </div>
-                <div class="blue-banner light-blue text-shadow">
-                    
-                    <p>Crafting memories that last</p>
-                </div>
-                <img class="hero-img" src="/images/hero-img.jpg" alt="">
-                <img class="hero-mobile" src="/images/logo-bg-rmv copy.png">
+                
+                
+                <img class="hero-mobile" src="/images/logo-bg-removed.png">
 
             </article>
+            <img class="hero-img" src="/images/hero-img.jpg" alt="">
+            <article class="sage-block"></article>
        </article>
     <section class="video">
         <div class="blue-box">
@@ -57,9 +56,9 @@
             <img  src="/images/section-block.png" class="section-block left" alt="">
             <img class="main-image left-img" src="/images/denim.jpg" alt="">
             <div class="flex-start">
-                <div class="product-description">
-                    <h2>Custome Clothes</h2>
-                    <ul class="description-list">
+                <div class="product-description flex-start-right">
+                    <h2 class="margin-fix-left">Custome Clothes</h2>
+                    <ul class="description-list margin-fix-left">
                         <li>Jeans</li>
                         <li>Denim Jacket</li>
                         <li>Shorts</li>
@@ -71,11 +70,11 @@
         </div>
         <div class="custom-shoes">
             <img src="/images/section-block.png" class="section-block right">
-            <img class="main-image right-img" src="/images/Cocomelon.jpg" alt="">
-            <div class="product-description" id="right-list">
+            <img id="cocomelon" class="main-image right-img" src="/images/Cocomelon.jpg" alt="">
+            <div class="product-description flex-start-left" id="right-list">
                 <div class="flex-start">
-                    <h2>Custome Shoes & Accessories</h2>
-                    <ul class="description-list" >
+                    <h2 class="margin-fix-right-c">Custome Shoes & Accessories</h2>
+                    <ul class="description-list margin-fix-right-c" >
                         <li>Sneakers</li>
                         <li>Backpacks</li>
                         <li>Hats</li>
@@ -88,7 +87,7 @@
             <img src="/images/section-block.png" class="section-block left">
             <img class="main-image left-img" src="/images/wall-art-eli.jpg" alt="">
             <div class="flex-start">
-                <div class="product-description" id="Decor">
+                <div class="product-description flex-start-right" id="Decor">
                     <h2>Decor</h2>
                     <ul class="description-list">
                         <li>Wall Decor</li>
@@ -98,46 +97,57 @@
                 </div>
             </div>
         </div>
+        <div class="custom-clothes">
+            <img  src="/images/section-block.png" class="section-block right" alt="">
+            <img id="baby-items" class="main-image right-img" src="/images/baby-cloths.jpg" alt="">
+            <div class="flex-start">
+                <div class="product-description baby-products flex-start-left">
+                    <h2>Custome Clothes</h2>
+                    <ul class="description-list">
+                        <li>Jeans</li>
+                        <li>Denim Jacket</li>
+                        <li>Shorts</li>
+                        <li>And more!</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+        <div class="custom-shoes">
+            <img src="/images/section-block.png" class="section-block left">
+            <img id="backpack" class="main-image right-img" src="/images/luka.jpg" alt="">
+            <div class="product-description flex-start-right small-mobile-fix" id="right-list">
+                <div class="flex-start">
+                    <h2 class="margin-fix-left">Custome Shoes & Accessories</h2>
+                    <ul class="description-list bp-list" >
+                        <li>Sneakers</li>
+                        <li>Backpacks</li>
+                        <li>Hats</li>
+                        <li>Bows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <div id="op-title" style="position: relative;">
-        <h2 class="other-prod-banner text-shadow">Other Products</h2>
-    </div>
-    <section class="other-products">
-        
-        <div class="dark-blue-box">
-            <!-- banner img or svg-->
-            <img class="other-products-img-left" id="baby-items" src="/images/baby-cloths.jpg" alt="">
-            <h3 class="section-title-left">Baby Items</h3>
-        </div>
-        <div class="dark-blue-box-right">
-            <!-- banner img or svg-->
-            <img class="other-products-img-right" id="backpacks" src="/images/luka.jpg" alt="">
-            <h3 class="section-title-right">Custom Backpacks</h3>
-        </div>
-        <div class="dark-blue-box">
-            <!-- banner img or svg-->
-            <img class="other-products-img-left" id="sm-decor" src="/images/desk-art.jpg" alt="">
-            <h3 class="section-title-left">Small & Medium Decor</h3>
-        </div>
-        <div class="dark-blue-box-right">
-            <!-- banner img or svg-->
-            <img class="other-products-img-right" id="lg-decor" other-products-img src="/images/table-display.jpg" alt="">
-            <h3 class="section-title-right">Large Decor</h3>
-        </div>
-    </section>
+    
 </div>
 <footer>
-    <img src="/images/Rectangle 339.svg" alt="">
+    <img class="logo-bg-removed" src="/images/logo-bg-rmv copy.png" alt="">
+    <img  id="rectangle" src="/images/Rectangle 339.svg" alt="">
     <form runat="server">
+        <h2>Contact Us</h2>
         <!-- name -->
         <input type="text" required name="name" placeholder="Name">
         <!-- email -->
-        <input type="text" required name="email" placeholder="Email">
+        <input type="email" required name="email" placeholder="Email">
         <!-- IMAGES-->
-        <label for="image" data-image-input>
+        <label for="file-input" data-image-input>
+            <img src="/images/upload-big-arrow.png">
+            <p>Upload Images</p>
+        </label>
             <input type="file" name="image" id="file-input"  multiple accept="image/*">
             <div id="preview"></div>
-        </label>
+        
         <!-- description-->
         <textarea required name="description"  cols="30" rows="10" placeholder="Description"></textarea>
         <!-- submit-->

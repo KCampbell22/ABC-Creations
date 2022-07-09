@@ -324,7 +324,7 @@ video{
     }
 
     .blue-box{
-        width:40ch;
+        width:auto;
         top: -1rem;
         height: 40px;
         line-height: 20px;

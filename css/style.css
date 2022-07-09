@@ -565,6 +565,9 @@ h2{
     .margin-fix-left{
         margin-left: 2rem;
     }
+    .denim{
+        left: 3rem;
+    }
 }
 
 @media screen and (max-width: 768.98px){
@@ -592,6 +595,9 @@ h2{
         top: -1rem;
         max-height: 250px;
         left: 3rem;
+    }
+    .denim{
+        left: 10rem;
     }
 }
 

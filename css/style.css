@@ -548,7 +548,18 @@ h2{
         top: 0rem;
         max-height: 300px;
     }
-    
+    .denim{
+        right: 0rem;
+    }
+    #Decor{
+        right: 0rem;
+    }
+    .small-mobile-fix{
+        right: 0rem;
+    }
+    .baby-products{
+        left: 0rem;
+    }
 }
 
 @media screen and  (max-width: 991.98px){

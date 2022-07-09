@@ -566,7 +566,20 @@ h2{
         margin-left: 2rem;
     }
     .denim{
-        right: 3rem;
+        right: 15rem;
+    }
+    #right-list{
+        width: 85vw;
+    }
+    #Decor{
+        right: 18rem;
+    }
+    .baby-products{
+        left: 16rem;
+    }
+    .small-mobile-fix{
+        width: 85vw;
+        right: 0;
     }
 }
 

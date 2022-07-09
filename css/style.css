@@ -368,7 +368,7 @@ video{
 }
 .section-block{
     position: absolute;
-    max-width: 70vw;
+    max-width: 80vw;
 }
 /* targets every odd section block */
 .right{
@@ -599,9 +599,7 @@ h2{
 /* Mobile */
 
 @media screen and (max-width: 575.98px){
-    .section-block{
-        max-width: 75vw;
-    }
+    
     .custom-clothes, .custom-shoes, .custom-wall-art {
         height: 150px;
         width: 100vw;
@@ -704,9 +702,7 @@ h2{
 
 @media screen and (max-width: 390px)
         {
-        .section-block{
-            max-width: 80vw;
-        }
+       
         .flex-start{
             width: 85vw;
         }

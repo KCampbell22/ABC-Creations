@@ -204,14 +204,14 @@ H2, H3, H4, H5, H6, p, a{
     }
 }
 
-@media (max-width: 991.98px){
+@media screen and (max-width: 991.98px){
     .logo img{
         max-width: 350px;
-        right: 1.5rem
+        right: 1rem
     }
     .hero-img{
         max-width: 260px;
-        
+
     }
 }
 

@@ -503,6 +503,9 @@ h2{
 /* Large Screens */
 
 @media screen and (max-width: 1199.98px){
+    .product-description{
+        width: 85vw;
+    }
     .main-products{
         max-height: 136rem;
     }
@@ -530,7 +533,7 @@ h2{
         font-size: 1rem;
     }
     #cocomelon{
-        right: 5rem;
+        right: 7rem;
         top:0rem
     }
     

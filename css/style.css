@@ -606,9 +606,7 @@ video{
 }
 
 @media screen and (max-width: 768.98px){
-    h2{
-      max-width:  22ch;
-    }
+   
 
     
     .main-products{

@@ -11,7 +11,12 @@ document.querySelector('.hamburger').addEventListener('click', function () {
         document.body.style.backgroundColor = '#C7DFCA';
     } else {
         document.body.style.backgroundColor = '#fff';
+        document.querySelector('.line-one').style.backgroundColor = '#5CACD3';
+        document.querySelector('.line-two').style.backgroundColor = '#5CACD3';
+        document.querySelector('.line-three').style.backgroundColor = '#5CACD3';
     }
+
+    
 });
 
 

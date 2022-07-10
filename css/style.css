@@ -324,12 +324,15 @@ video{
     position: relative;
 }
 
-@media screen and (max-width: 991.98px){
+@media (max-width: 991.98px){
     .blue-box{
         width: 37ch;
     }
 }
 
+@media (max-width: 767.98px){
+    Rules
+}
 @media screen and (max-width: 575.98px){
     .video-container video{
         width: 300px;
@@ -357,9 +360,6 @@ video{
         margin-bottom: 0;  
         margin-top: 0; 
      }
-     .text-shadow{
-        width: 29ch;
-     }
     }
 
 .open{
@@ -372,7 +372,7 @@ video{
 
 .text-shadow{
     text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.512);
-   max-width: 40ch;
+   width: 23ch
 }
 .section-block{
     position: absolute;
@@ -443,8 +443,8 @@ video{
     font-family: 'Inter';
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 85vw;
+    
+    width: 68vw;
 }
 
 .description-list li{
@@ -473,10 +473,10 @@ video{
     left: 0rem;
 }
 
-h2{
-    text-align: center;
-    width: auto;
+.flex-start-left{
+    right: 0;
 }
+
 
 #backpack{
     max-height: 500px;
@@ -519,9 +519,7 @@ h2{
 /* Large Screens */
 
 @media screen and (max-width: 1199.98px){
-    .product-description{
-        width: 85vw;
-    }
+    
     .main-products{
         max-height: 136rem;
     }
@@ -596,10 +594,7 @@ h2{
         margin-left: 2rem;
     }
     
-    #right-list{
-        width: 85vw;
-        left: 0;
-    }
+   
    
     .product-description h2{
         font-size: 1.1rem;
@@ -611,11 +606,11 @@ h2{
 }
 
 @media screen and (max-width: 768.98px){
- 
-
-    #Decor h2 {
-        width: 21ch;
+    h2{
+      max-width:  22ch;
     }
+
+    
     .main-products{
         max-height: 110rem;
     }
@@ -665,7 +660,9 @@ h2{
         justify-content: space-evenly;
         align-items: flex-start;
     }
-  
+    .product-description{
+        width: 77vw;
+    }
 
     .left-img{
         max-width: 142px;
@@ -718,9 +715,11 @@ h2{
     .product-description h2{
         font-size: .8rem;
         margin-bottom: 5px;
+        width: 15ch;
     }
     .description-list{
         display: flex;
+        flex-direction: column;
         width: 80px;
         height: auto;
         flex-wrap: wrap;
@@ -728,7 +727,6 @@ h2{
         font-size: .6rem;
         margin-top: 5px;
         display: flex;
-        width: 123px;
         flex-wrap: wrap;
     }
     .description-list li{
@@ -763,6 +761,8 @@ h2{
 
 @media screen and (max-width: 390px)
         {
+        
+
        
         .flex-start{
             width: 85vw;
@@ -771,8 +771,9 @@ h2{
            right: 0;
         }
         .flex-start-right{
-            left: 0;
+            left: 0px;
             align-items: flex-end;
+             width: 70vw;
         }
         h2.margin-fix-left {
             margin-right: 13px;

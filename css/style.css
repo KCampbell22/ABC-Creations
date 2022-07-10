@@ -372,7 +372,7 @@ video{
 
 .text-shadow{
     text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.512);
-   width: 23ch
+   max-width: 40ch;
 }
 .section-block{
     position: absolute;

@@ -607,7 +607,9 @@ video{
 
 @media screen and (max-width: 768.98px){
    
-
+    .text-shadow{
+        width: 26ch;
+    }
     
     .main-products{
         max-height: 110rem;

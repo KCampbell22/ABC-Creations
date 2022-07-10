@@ -200,7 +200,7 @@ H2, H3, H4, H5, H6, p, a{
     .hero-img{
         max-width: 380px;
         right: 3.5rem;
-        top: 6rem;
+        top: 9rem;
     }
 }
 
@@ -218,10 +218,17 @@ H2, H3, H4, H5, H6, p, a{
 /* Mobile Phone */
 @media screen and (max-width: 575.98px){
     .hero-wrap{
-        height: auto;
+        height: 662px;
+        
         display: flex;
         flex-direction: column;
 
+    }
+    
+
+    .sage-block{
+        max-height: 700px;
+        min-height: 570px;
     }
     .hero-img{
         width: 100%;
@@ -231,7 +238,7 @@ H2, H3, H4, H5, H6, p, a{
     }
     .big-block{
         width: 55%;
-        height: 100vh;
+        height: 100%;
         position: relative;
         top: 0;
         left: 0;
@@ -241,7 +248,7 @@ H2, H3, H4, H5, H6, p, a{
     .logo img{
         height: auto;
         position: absolute;
-        top: 8rem;
+        top: 11rem;
         left: 3rem;
         margin: 0 auto;
         width: 330px;
@@ -272,7 +279,7 @@ H2, H3, H4, H5, H6, p, a{
 @media screen and (max-width: 321.98px){
     .logo img{
     width: 250px;
-    left: 1rem;
+    left: 2rem;
     }
 
 }
@@ -319,7 +326,7 @@ video{
 
 @media (max-width: 991.98px){
     .blue-box{
-        width: 43ch;
+        width: 37ch;
     }
 }
 
@@ -379,18 +386,18 @@ video{
 }
 
 .flex-start-right{
-    right: 0rem;
+    left: 0rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 .left-img{
-    left: 3rem;
-    top: 0rem;
+    left: 8rem;
+    top: 2rem;
 }
 
 .right-img{
     right: 6rem;
-    height: 450px;
+    height: 500px;
     top: -5rem;
 }
 /* main products */
@@ -418,12 +425,13 @@ video{
     max-height: 203rem;
 }
 
-.custom-clothes img{
+#cocomelon{
+    max-width: 409px;
 
 }
 
 #baby-items{
-    max-height: 400px;
+    max-height: 500px;
     top: -2rem;
 }
 
@@ -470,8 +478,9 @@ h2{
 }
 
 #backpack{
-    max-height: 400px;
+    max-height: 500px;
     left: 5rem;
+    top: -3rem;
 }
 
 .Products h2{
@@ -517,9 +526,9 @@ h2{
     }
     
     .left-img{
-        max-width: 350px;
-        top: 3rem;
-        left: 2rem;
+        max-width: 380px;
+        top: 2rem;
+        left: 4rem;
     
     }
     
@@ -539,8 +548,8 @@ h2{
         font-size: 1rem;
     }
     #cocomelon{
-        right: 7rem;
-        top:0rem
+        right: 3rem;
+        top: 0rem;
     }
     
 
@@ -551,8 +560,8 @@ h2{
         right: 2.5rem;
     }
     #backpack{
-        top: 0rem;
-        max-height: 300px;
+        max-height: 350px;
+        top: -3rem;
     }
     .denim{
         right: 0rem;
@@ -588,6 +597,7 @@ h2{
     
     #right-list{
         width: 85vw;
+        left: 0;
     }
    
     .product-description h2{
@@ -601,7 +611,11 @@ h2{
 
 @media screen and (max-width: 768.98px){
     h2{
-      width:  20ch;
+      max-width:  22ch;
+    }
+
+    #Decor h2 {
+        width: 21ch;
     }
     .main-products{
         max-height: 110rem;
@@ -629,6 +643,8 @@ h2{
         left: 3rem;
     }
     .denim{
+        left: -1rem;
+        align-items: flex-end;
     }
 }
 
@@ -640,7 +656,7 @@ h2{
         max-width: 85vw;
     }
     .baby-products h2{
-        width: 24ch;
+        width: 17ch;
     }
     .custom-clothes, .custom-shoes, .custom-wall-art {
         height: 150px;
@@ -687,8 +703,8 @@ h2{
         width: 15ch;
     }
     #Decor{
-        right: 2rem;
-    }
+        right: 4rem;
+        align-items: flex-end;    }
     #baby-items{
         right: 2rem;
         max-height: 120px;
@@ -742,6 +758,7 @@ h2{
     .baby-products{
         width: 85vw;
         align-items: flex-start;
+        right: 0;
     }
 }
 
@@ -753,7 +770,6 @@ h2{
         }
         .flex-start-left{
            right: 0;
-            align-items: flex-start;
         }
         .flex-start-right{
             left: 0;
@@ -774,10 +790,18 @@ h2{
             font-size: .6rem;
         }
         .description-list{
-            font-size: .5rem;
+            font-size: 0.5rem;
+    position: relative;
+    left: 0.5rem;
+        }
+
+        h2.margin-fix-left {
+            margin-right: 22px;
         }
        
-        
+        #cocomelon{
+            top: 0;
+        }
         
     }
 
@@ -976,7 +1000,6 @@ input[type="submit"]{
 }
 
 
-form{position: relative; }
 
 
 @media screen and (max-width: 575.98px){

@@ -358,7 +358,7 @@ video{
         margin-top: 0; 
      }
      .text-shadow{
-        width: 22ch;
+        max-width: 40ch;
      }
     }
 
@@ -611,9 +611,7 @@ h2{
 }
 
 @media screen and (max-width: 768.98px){
-    h2{
-      max-width:  22ch;
-    }
+ 
 
     #Decor h2 {
         width: 21ch;

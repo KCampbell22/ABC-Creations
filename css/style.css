@@ -372,6 +372,7 @@ video{
 
 .text-shadow{
     text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.512);
+   width: 23ch
 }
 .section-block{
     position: absolute;
@@ -775,7 +776,9 @@ h2{
             left: 0;
             align-items: flex-end;
         }
-       
+        h2.margin-fix-left {
+            margin-right: 13px;
+        }
         
     }
 

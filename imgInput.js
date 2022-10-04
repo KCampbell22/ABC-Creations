@@ -15,7 +15,13 @@ function previewImages() {
       var div = document.createElement("div");
       // create an div to hold the image and the x
       var img = new Image();
+      // when the image is submitted to formspree it needs to show the image in the submission
+
       img.src = this.result;
+      img.width = 200;
+      img.height = 200;
+      img.style = "object-fit: cover;";
+
       div.appendChild(img);
       preview.appendChild(div);
       div.style.position = "relative";
@@ -41,6 +47,7 @@ function previewImages() {
         newInput.type = "file";
         newInput.multiple = true;
         newInput.accept = "image/*";
+        // show image in formspree submit
         newInput.addEventListener("change", previewImages);
         document.querySelector("#file-input").replaceWith(newInput);
       });

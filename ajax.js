@@ -15,3 +15,5 @@ const handleSubmit = (e) => {
 
   e.preventDefault();
 };
+
+document.querySelector("form").addEventListener("submit", handleSubmit);
